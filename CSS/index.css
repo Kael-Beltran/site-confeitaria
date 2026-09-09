@@ -1,0 +1,106 @@
+* {
+    font-family: "Lobster Two", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #FDFCF9;
+    height: 175px;
+    display: flex;
+}
+
+.div-logo {
+    width: 13%;
+    height: 170px;
+}
+
+.div-menu {
+    width: 87%;
+    height: 170px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center; /* centraliza verticalmente */
+}
+
+.Logotipo {
+    height: 170px;
+}
+
+ul {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    list-style-type: none;
+}
+
+h1 {
+   color: #305145;
+   font-size: 45px;
+}
+
+
+a {
+    text-decoration: none;
+        color: #305145;;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.img-bolo {
+    width: 100%;
+    height: 600px;
+    object-fit: cover;
+}
+
+.sobre {
+    text-align: center;
+    margin-top: 10px;
+}
+
+h2 {
+    font-size: 40px;
+    margin-top: 20px;
+}
+
+p {
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+.menu-cardapio-itens {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.menu-cardapo-item {
+    border: 2px solid #305145;
+    border-radius: 5px;
+    width: 25%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+h3 {
+    font-size: 22px;
+    color: #305145;
+    font-weight: bold;
+}
+
+.menu-cardapo-item p {
+    font-size: 20px;
+}
+
+footer {
+    background-color: #305145;
+    height: 50px;
+    margin-top: 20px;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
