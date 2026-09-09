@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <link rel="stylesheet" href="../CSS/index.css">
+    <link rel="stylesheet" href="../CSS/cardapaio.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+        rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+</head>
+
+<body>
+    <header>
+        <div class="div-logo">
+            <img class="Logotipo" src="../IMG/logo.png" alt="Logotipo da confeitaria">
+        </div>
+        <div class="div-menu">
+            <h1>
+                Confeitaria Sempre Doce
+            </h1>
+
+            <br>
+
+
+            <nav>
+                <ul>
+                    <li>
+                        <a href="../index.html">Início</a>
+                    </li>
+
+                    <li>
+                        <a href="PAGES/sobre.html">Sobre</a>
+                    </li>
+
+                    <li>
+                        <a href="PAGES/cardapio.html">Cardapio</a>
+                    </li>
+
+                    <li>
+                        <a href="PAGES/contato.html">Contato</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <section class="sobre">
+        <h2>Nosso Cardápio</h2>
+        <div class="menu-cardapio-itens">
+            <div class="menu-cardapio-item">
+                <h3>Bolo de Maracuja</h3>
+
+                <div class="div-card">
+                    <img class="img-cardapio" src="../IMG/bolo1.png" alt="Bolo de Maracuja">
+                    <p>
+                        Uma combinação irresistível de massa fofinha
+                        com um delicioso recheio cremoso de maracujá.
+                    </p>
+                </div>
+
+                <div class="reservar">
+                    <button onclick="abrir()" href="">Fazer Pedido</button>
+                </div>
+
+            </div>
+
+
+            <div class="menu-cardapio-item">
+                <h3>Bolo de Morango</h3>
+
+                <div class="div-card">
+                    <img class="img-cardapio" src="../IMG/bolo2.png" alt="Bolo de Morango">
+                    <p>
+                        Um clássico que conquista todo mundo, com camadas de morango
+                        e um delicioso recheio de chocolate branco.
+                    </p>
+                </div>
+                
+                <div class="reservar">
+                    <button onclick="abrir()" href="">Fazer Pedido</button>
+                </div>
+
+            </div>
+
+            <div class="menu-cardapio-item">
+                <h3>Bolo de Abacaxi e Ninho</h3>
+
+                <div class="div-card">
+                    <img class="img-cardapio" src="../IMG/bolo3.png" alt="Bolo de Abacaxi e Ninho">
+                    <p>
+                        Uma combinação deliciosa de abacaxi com o sabor cremoso e irresistível do leite Ninho.
+                    </p>
+                </div>
+
+                <div class="reservar">
+                    <button onclick="abrir()" href="">Fazer Pedido</button>
+                </div>
+
+            </div>
+
+
+            <div class="menu-cardapio-item">
+                <h3>Bolo de Chocolate</h3>
+
+                <div class="div-card">
+                    <img class="img-cardapio" src="../IMG/bolo4.png" alt="Bolo de Chocolate">
+                    <p>
+                        Bolo de chocolate caseiro com massa bem macia, recheio generoso e cobertura cremosa de brigadeiro.
+                    </p>
+                </div>
+
+                <div class="reservar">
+                    <button onclick="abrir()" href="">Fazer Pedido</button>
+                </div>
+
+            </div>
+
+
+            <div class="menu-cardapio-item">
+                <h3>Bolo de Coco</h3>
+                <div class="div-card">
+                    <img class="img-cardapio" src="../IMG/bolo5.png" alt="Bolo de Coco">
+                    <p>
+                        Uma deliciosa combinação de massa fofinha
+                        com um sabor suave e irresistível de coco, perfeita
+                        para deixar qualquer momento ainda mais doce.
+                    </p>
+                </div>
+                <div class="reservar">
+                   <button onclick="abrir()" href="">Fazer Pedido</button>
+                </div>
+            </div>
+
+            <div class="menu-cardapio-item">
+                <h3>Bolo de Laranja</h3>
+                <div class="div-card">
+                    <img class="img-cardapio" src="../IMG/bolo6.png" alt="Bolo de Laranja">
+                    <p>
+                       Uma massa fofinha e saborosa, preparada com o delicioso toque da laranja, trazendo
+                        um aroma cítrico e irresistível a cada pedaço.
+
+                    </p>
+                </div>
+                <div class="reservar">
+                    <button onclick="abrir()" href="">Fazer Pedido</button>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <div id="fade" class="hide"></div>
+
+    <div id="modal" class="hide">
+        <div>
+            <h2>Realizar Reserva</h2>
+            <img src="" alt="">
+        </div>
+
+        <div>
+            <a href="">Fechar</a>
+        </div>
+    </div>
+
+</body>
+<script src="../JS/cardapio.js"></script>
+</html>

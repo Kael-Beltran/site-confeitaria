@@ -104,3 +104,25 @@ footer {
     justify-content: center;
     align-items: center;
 }
+
+@media (max-width: 600px) {
+    header {
+        height: auto;
+        flex-direction: column;
+    }
+
+    .div-logo,
+    .div-menu,
+    .menu-cardapo-item {
+        width: 100%;
+        height: auto;
+    }
+
+    .img-bolo {
+        height: 250px;
+    }
+
+    .menu-cardapio-itens {
+        flex-direction: column;
+    }
+}
