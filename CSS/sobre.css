@@ -1,0 +1,117 @@
+.pagina-sobre .sobre {
+	margin: 0;
+	padding: 64px 24px;
+	background-color: #edf1eb;
+	text-align: left;
+}
+
+.pagina-sobre .sobre-conteudo {
+	display: flex;
+	align-items: center;
+	gap: 56px;
+	max-width: 1100px;
+	margin: 0 auto;
+}
+
+.pagina-sobre .sobre-conteudo img {
+	width: 48%;
+	aspect-ratio: 4 / 3;
+	object-fit: cover;
+	border: 8px solid #FDFCF9;
+	border-radius: 3px;
+	box-shadow: 12px 12px 0 #d8c8b4;
+}
+
+.pagina-sobre .sobre-texto {
+	flex: 1;
+}
+
+.pagina-sobre .sobre-etiqueta {
+	margin: 0 0 12px;
+	padding-left: 10px;
+	border-left: 3px solid #986d4e;
+	color: #986d4e;
+	font-family: Georgia, serif;
+	font-size: 14px;
+	font-weight: bold;
+}
+
+.pagina-sobre .sobre-texto h2 {
+	margin: 0 0 18px;
+	color: #305145;
+	font-size: 46px;
+	line-height: 1.15;
+}
+
+.pagina-sobre .sobre-texto p:not(.sobre-etiqueta) {
+	margin: 0 0 16px;
+	color: #454840;
+	font-family: Georgia, serif;
+	font-size: 18px;
+	line-height: 1.65;
+}
+
+.pagina-sobre .sobre-lista {
+	margin: 0 0 22px;
+	padding: 0;
+	list-style: none;
+}
+
+.pagina-sobre .sobre-lista li {
+	position: relative;
+	margin-bottom: 10px;
+	padding-left: 20px;
+	color: #454840;
+	font-family: Georgia, serif;
+	font-size: 17px;
+	line-height: 1.5;
+}
+
+.pagina-sobre .sobre-lista li::before {
+	position: absolute;
+	left: 0;
+	color: #986d4e;
+	content: "•";
+	font-size: 20px;
+	line-height: 1.1;
+}
+
+.pagina-sobre .sobre-link {
+	display: inline-block;
+	margin-top: 4px;
+	padding: 12px 20px;
+	border: 1px solid #305145;
+	border-radius: 4px;
+	background-color: #305145;
+	color: #FDFCF9;
+	font-family: Georgia, serif;
+	font-size: 16px;
+	transition: background-color 0.2s, color 0.2s;
+}
+
+.pagina-sobre .sobre-link:hover {
+	background-color: #FDFCF9;
+	color: #305145;
+	text-decoration: none;
+}
+
+@media (max-width: 700px) {
+	.pagina-sobre .sobre {
+		padding: 36px 18px;
+	}
+
+	.pagina-sobre .sobre-conteudo {
+		flex-direction: column;
+		align-items: stretch;
+		gap: 28px;
+	}
+
+	.pagina-sobre .sobre-conteudo img {
+		width: 100%;
+		box-shadow: 8px 8px 0 #d8c8b4;
+	}
+
+	.pagina-sobre .sobre-texto h2 {
+		font-size: 36px;
+	}
+}

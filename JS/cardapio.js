@@ -1,8 +1,5 @@
-const fade = document
-    .getElementById("fade")
-
-const modal = document
-    .getElementById("modal")
+const fade = document.getElementById("fade")
+const modal = document.getElementById("modal")
 
 function abrir() {
     fade.classList.remove("hide")
@@ -19,4 +16,5 @@ function fechar() {
     modal.classList.add("hide")
     modal.classList.remove("modal")
 }
-}
+
+fade.addEventListener("click", fechar)

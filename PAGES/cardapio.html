@@ -3,6 +3,7 @@
 
 <head>
     <link rel="stylesheet" href="../CSS/index.css">
+    <link rel="stylesheet" href="../CSS/sobre.css">
     <link rel="stylesheet" href="../CSS/cardapaio.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -34,11 +35,11 @@
                     </li>
 
                     <li>
-                        <a href="PAGES/sobre.html">Sobre</a>
+                        <a href="sobre.html">Sobre</a>
                     </li>
 
                     <li>
-                        <a href="PAGES/cardapio.html">Cardapio</a>
+                        <a href="cardapio.html">Cardapio</a>
                     </li>
 
                     <li>
@@ -47,6 +48,7 @@
                 </ul>
             </nav>
         </div>
+        <div class="div-logo"></div>
     </header>
     <section class="sobre">
         <h2>Nosso Cardápio</h2>
@@ -63,7 +65,7 @@
                 </div>
 
                 <div class="reservar">
-                    <button onclick="abrir()" href="">Fazer Pedido</button>
+                    <button class="button-reserva" onclick="abrir()">Fazer Pedido</button>
                 </div>
 
             </div>
@@ -81,7 +83,7 @@
                 </div>
                 
                 <div class="reservar">
-                    <button onclick="abrir()" href="">Fazer Pedido</button>
+                    <button class="button-reserva" onclick="abrir()">Fazer Pedido</button>
                 </div>
 
             </div>
@@ -97,7 +99,7 @@
                 </div>
 
                 <div class="reservar">
-                    <button onclick="abrir()" href="">Fazer Pedido</button>
+                    <button class="button-reserva" onclick="abrir()">Fazer Pedido</button>
                 </div>
 
             </div>
@@ -114,7 +116,7 @@
                 </div>
 
                 <div class="reservar">
-                    <button onclick="abrir()" href="">Fazer Pedido</button>
+                    <button class="button-reserva" onclick="abrir()">Fazer Pedido</button>
                 </div>
 
             </div>
@@ -130,8 +132,9 @@
                         para deixar qualquer momento ainda mais doce.
                     </p>
                 </div>
+
                 <div class="reservar">
-                   <button onclick="abrir()" href="">Fazer Pedido</button>
+                    <button class="button-reserva" onclick="abrir()">Fazer Pedido</button>
                 </div>
             </div>
 
@@ -145,9 +148,11 @@
 
                     </p>
                 </div>
+
                 <div class="reservar">
-                    <button onclick="abrir()" href="">Fazer Pedido</button>
+                    <button class="button-reserva" onclick="abrir()">Fazer Pedido</button>
                 </div>
+                
             </div>
 
         </div>
@@ -156,14 +161,15 @@
     <div id="fade" class="hide"></div>
 
     <div id="modal" class="hide">
-        <div>
+        <div class="centralizado">
             <h2>Realizar Reserva</h2>
-            <img src="" alt="">
+            <img src="../IMG/qrcode-pix.png" alt="QRCode para pagamento via PIX">
         </div>
 
         <div>
             <a href="">Fechar</a>
         </div>
+
     </div>
 
 </body>
