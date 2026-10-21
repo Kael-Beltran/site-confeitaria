@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/index.css">
+    <link rel="stylesheet" href="../CSS/contato.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+        rel="stylesheet">
+    <title>Contato e pedidos | Confeitaria Sempre Doce</title>
+
+</head>
+
+<body>
+    <header>
+        <div class="div-logo">
+            <img class="Logotipo" src="../IMG/logo.png" alt="Logotipo da confeitaria">
+        </div>
+        <div class="div-menu">
+            <h1>Confeitaria Sempre Doce</h1>
+            <br>
+            <nav>
+                <ul>
+                    <li><a href="../index.html">Início</a></li>
+                    <li><a href="sobre.html">Sobre</a></li>
+                    <li><a href="cardapio.html">Cardápio</a></li>
+                    <li><a href="contato.html" aria-current="page">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="div-logo"></div>
+    </header>
+
+    <section class="contato-intro">
+        <p class="contato-etiqueta">ATENDIMENTO</p>
+        <h2>Faça seu pedido</h2>
+        <p>Escolha seu bolo e informe os dados para organizarmos sua encomenda.</p>
+    </section>
+
+    <form id="formCadastro" class="form-cadastro">
+        <section class="pedido-secao">
+            <h2 class="secao-titulo">Seus dados</h2>
+            <fieldset>
+                <legend>Informações para contato</legend>
+                <div class="campo">
+                    <label for="nome">Nome completo</label>
+                    <input id="nome" name="nome" type="text" autocomplete="name" required>
+                </div>
+                <div class="campo">
+                    <label for="email">E-mail</label>
+                    <input id="email" name="email" type="email" autocomplete="email" required>
+                </div>
+                <div class="campo">
+                    <label for="telefone">Telefone</label>
+                    <input id="telefone" name="telefone" type="tel" autocomplete="tel" required>
+                </div>
+                <div class="campo">
+                    <label for="whatsapp">WhatsApp <span>(opcional)</span></label>
+                    <input id="whatsapp" name="whatsapp" type="tel" placeholder="(00) 00000-0000">
+                </div>
+                <div class="campo">
+                    <label for="contato-preferido">Prefere ser contatado por</label>
+                    <select id="contato-preferido" name="contatoPreferido" required>
+                        <option value="">Selecione</option>
+                        <option>E-mail</option>
+                        <option>Telefone</option>
+                        <option>WhatsApp</option>
+                    </select>
+                </div>
+                <div class="campo">
+                    <label for="conheceu">Como nos conheceu? <span>(opcional)</span></label>
+                    <select id="conheceu" name="conheceu">
+                        <option value="">Selecione</option>
+                        <option>Instagram</option>
+                        <option>Indicação de amigos</option>
+                        <option>Google</option>
+                        <option>Outro</option>
+                    </select>
+                </div>
+            </fieldset>
+        </section>
+
+        <section class="pedido-secao">
+            <h2 class="secao-titulo">Endereço</h2>
+            <fieldset>
+                <legend>Endereço de entrega</legend>
+                <div class="campo campo-cep">
+                    <label for="cep">CEP</label>
+                    <div class="cep-controle">
+                        <input id="cep" name="cep" type="text" inputmode="numeric" autocomplete="postal-code"
+                            maxlength="9" pattern="[0-9]{5}-[0-9]{3}" placeholder="00000-000"
+                            aria-describedby="cep-status" required>
+                        <button id="buscar-cep" class="botao-secundario" type="button">Buscar CEP</button>
+                    </div>
+                    <p id="cep-status" class="campo-status" aria-live="polite"></p>
+                </div>
+                <div class="campo">
+                    <label for="logradouro">Rua / Logradouro</label>
+                    <input id="logradouro" name="logradouro" type="text" autocomplete="address-line1" required>
+                </div>
+                <div class="campo">
+                    <label for="numero">Número</label>
+                    <input id="numero" name="numero" type="text" inputmode="numeric" required>
+                </div>
+                <div class="campo">
+                    <label for="complemento">Complemento <span>(opcional)</span></label>
+                    <input id="complemento" name="complemento" type="text" autocomplete="address-line2">
+                </div>
+                <div class="campo">
+                    <label for="bairro">Bairro</label>
+                    <input id="bairro" name="bairro" type="text" autocomplete="address-level3" required>
+                </div>
+                <div class="campo">
+                    <label for="cidade">Cidade</label>
+                    <input id="cidade" name="cidade" type="text" autocomplete="address-level2" required>
+                </div>
+                <div class="campo">
+                    <label for="estado">Estado</label>
+                    <input id="estado" name="estado" type="text" autocomplete="address-level1" required>
+                </div>
+            </fieldset>
+        </section>
+
+        <section class="pedido-secao">
+            <fieldset>
+                <legend>Detalhes da encomenda</legend>
+                <div class="campo">
+                    <label for="bolo">Sabor do bolo</label>
+                    <select id="bolo" name="bolo" required>
+                        <option value="">Selecione um sabor</option>
+                        <option>Bolo de Maracujá</option>
+                        <option>Bolo de Morango</option>
+                        <option>Bolo de Abacaxi e Ninho</option>
+                        <option>Bolo de Chocolate</option>
+                        <option>Bolo de Coco</option>
+                        <option>Bolo de Laranja</option>
+                    </select>
+                </div>
+                <div class="campo">
+                    <label for="quantidade">Quantidade</label>
+                    <input id="quantidade" name="quantidade" type="number" min="1" max="20" value="1" required>
+                </div>
+                <div class="campo campo-observacao">
+                    <label for="observacao-bolo">Observações <span>(opcional)</span></label>
+                    <textarea id="observacao-bolo" name="observacaoBolo" rows="3"
+                        placeholder="Conte para nós algum detalhe da encomenda"></textarea>
+                </div>
+            </fieldset>
+        </section>
+
+        <div class="form-acoes">
+            <p id="pedido-status" class="pedido-status" aria-live="polite"></p>
+            <button class="botao-principal" type="submit">Revisar pedido</button>
+        </div>
+    </form>
+
+    <script src="../JS/contato.js"></script>
+
+</body>
+
+</html>

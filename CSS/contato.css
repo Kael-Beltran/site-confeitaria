@@ -1,0 +1,289 @@
+body {
+    min-height: 100vh;
+    background: #edf1eb;
+}
+
+.contato-intro {
+    padding: 44px 20px 28px;
+    text-align: center;
+}
+
+.contato-etiqueta {
+    margin: 0 0 8px;
+    color: #986d4e;
+    font-family: Georgia, serif;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.contato-intro h2,
+.form-cadastro h2 {
+    color: #305145;
+    line-height: 1.2;
+}
+
+.contato-intro h2 {
+    margin: 0;
+    font-size: 42px;
+}
+
+.contato-intro > p:last-child {
+    margin: 10px 0 0;
+    color: #545b52;
+    font-family: Georgia, serif;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.form-cadastro,
+.form-cadastro * {
+    box-sizing: border-box;
+}
+
+.form-cadastro {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    align-items: stretch;
+    gap: 36px 28px;
+    max-width: 1080px;
+    margin: 0 auto 52px;
+    padding: 32px;
+    border: 1px solid #e3e7df;
+    border-radius: 14px;
+    background: #fdfcf9;
+    box-shadow: 0 12px 34px rgba(48, 81, 69, 0.1);
+}
+
+/* Cada seção vira uma coluna: título em cima, quadro ocupando o resto.
+   Isso evita que o quadro (height: 100%) ultrapasse a seção e
+   sobreponha a seção de baixo. */
+.pedido-secao {
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+}
+
+.pedido-secao:last-of-type {
+    grid-column: 1 / -1;
+}
+
+.form-cadastro h2.secao-titulo {
+    margin: 0 0 14px;
+    font-size: 25px;
+}
+
+.form-cadastro fieldset {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    align-content: start;
+    flex: 1;
+    gap: 16px;
+    min-width: 0;
+    margin: 0;
+    padding: 22px;
+    border: 1px solid #d9dfd6;
+    border-radius: 9px;
+}
+
+/* Legend dentro do quadro, acima do primeiro campo
+   (em vez de ficar em cima da borda). */
+.form-cadastro legend {
+    float: left;
+    grid-column: 1 / -1;
+    width: 100%;
+    margin: 0 0 4px;
+    padding: 0;
+    color: #305145;
+    font-size: 18px;
+}
+
+.form-cadastro .campo {
+    display: grid;
+    align-content: start;
+    gap: 7px;
+    min-width: 0;
+}
+
+.form-cadastro .campo-cep,
+.form-cadastro .campo-observacao {
+    grid-column: 1 / -1;
+}
+
+.form-cadastro label {
+    color: #454840;
+    font-family: Georgia, serif;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.form-cadastro label span {
+    color: #777d74;
+    font-weight: normal;
+}
+
+.form-cadastro input,
+.form-cadastro select,
+.form-cadastro textarea {
+    width: 100%;
+    min-width: 0;
+    margin: 0;
+    padding: 11px 12px;
+    border: 1px solid #cbd2c8;
+    border-radius: 6px;
+    background: #fff;
+    color: #30362f;
+    font-family: Georgia, serif;
+    font-size: 15px;
+    transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.form-cadastro input:focus,
+.form-cadastro select:focus,
+.form-cadastro textarea:focus {
+    border-color: #527363;
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(48, 81, 69, 0.13);
+}
+
+.form-cadastro input[aria-invalid="true"] {
+    border-color: #a33b32;
+}
+
+.form-cadastro textarea {
+    resize: vertical;
+}
+
+.cep-controle {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) auto;
+    gap: 10px;
+}
+
+.botao-secundario,
+.botao-principal {
+    min-height: 44px;
+    padding: 10px 18px;
+    border: 1px solid #305145;
+    border-radius: 6px;
+    font-family: Georgia, serif;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.2s, color 0.2s, opacity 0.2s;
+}
+
+.botao-secundario {
+    background: #fdfcf9;
+    color: #305145;
+}
+
+.botao-secundario:hover:not(:disabled) {
+    background: #edf1eb;
+}
+
+.botao-principal {
+    background: #305145;
+    color: #fdfcf9;
+}
+
+.botao-principal:hover {
+    background: #243f35;
+}
+
+.botao-secundario:disabled {
+    cursor: wait;
+    opacity: 0.65;
+}
+
+.campo-status,
+.pedido-status {
+    margin: 0;
+    font-family: Georgia, serif;
+    font-size: 13px;
+    line-height: 1.5;
+}
+
+.campo-status:empty {
+    display: none;
+}
+
+.campo-status.erro {
+    color: #a33b32;
+}
+
+.campo-status.sucesso {
+    color: #305145;
+}
+
+.campo-status.carregando {
+    color: #626b61;
+}
+
+.form-acoes {
+    display: flex;
+    grid-column: 1 / -1;
+    align-items: center;
+    justify-content: space-between;
+    gap: 18px;
+    padding-top: 4px;
+}
+
+.pedido-status {
+    color: #545b52;
+}
+
+.pedido-status.aviso {
+    max-width: 680px;
+    padding: 11px 14px;
+    border-left: 3px solid #986d4e;
+    background: #f5f1eb;
+}
+
+@media (max-width: 760px) {
+    .form-cadastro {
+        gap: 28px;
+        margin: 0 18px 36px;
+        padding: 24px;
+        grid-template-columns: 1fr;
+    }
+
+    .pedido-secao:last-of-type {
+        grid-column: auto;
+    }
+}
+
+@media (max-width: 480px) {
+    .contato-intro {
+        padding: 34px 18px 22px;
+    }
+
+    .contato-intro h2 {
+        font-size: 34px;
+    }
+
+    .form-cadastro {
+        gap: 24px;
+        margin: 0 12px 28px;
+        padding: 18px;
+    }
+
+    .form-cadastro fieldset {
+        grid-template-columns: 1fr;
+        padding: 18px 14px;
+    }
+
+    .form-cadastro .campo-cep,
+    .form-cadastro .campo-observacao {
+        grid-column: auto;
+    }
+
+    .cep-controle {
+        grid-template-columns: 1fr;
+    }
+
+    .form-acoes {
+        align-items: stretch;
+        flex-direction: column-reverse;
+    }
+}
