@@ -1,0 +1,51 @@
+table {
+    border: 1px solid;
+    border-radius: 10px;
+    border-color: gray;
+    background-color: #fdfcf9;
+}
+
+table img {
+    width: 30%;
+    border-radius: 5px;
+
+}
+
+table td {
+    border: 1px solid;
+    padding: 10px;
+    border-radius: 10px;
+    border-color: #243f35;
+}
+
+table thead {
+    font-weight: bold;
+    font-size: 30px;
+}
+
+table tbody tr{
+    font-size: 25px;
+
+}
+
+.sobre {
+    margin: 50px;
+}
+
+table th, table td {
+    border: 1px solid;
+    padding: 10px;
+    text-align: center;
+    border-radius: 10px;
+    border-color: #243f35;
+}
+
+table img:hover {
+    width: 70%;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+body {
+    background-color: #06073d;
+}
